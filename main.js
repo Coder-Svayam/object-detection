@@ -20,9 +20,9 @@ function draw(){
     image(video, 0, 0, 400, 400);
     
     if(status != ""){
-        r = ramdom(255);
-        g = ramdom(255);
-        b = ramdom(255);
+        r = random(255);
+        g = random(255);
+        b = random(255);
         objectDetector.detect(video, gotResults);
         for(i = 0; i < objects.length; i++){
             document.getElementById("status").innerHTML = "Status : Object Detected";
